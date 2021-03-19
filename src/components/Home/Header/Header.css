@@ -1,0 +1,25 @@
+.navbar{
+   background-color: #fcba03;
+}
+.link{
+   color: #ffffff ;
+   font-size: large;
+   font-weight: 500 !important;
+}
+.active_link{
+   color: #000000;
+   border-bottom: 2.1px solid rgb(14, 228, 60);
+}
+.link:hover{
+   color: rgb(221, 14, 228);
+   text-decoration: none;
+}
+.login_btn{
+   color: #fff;
+   background-color: #343a40;
+   margin: 0 !important;
+   padding: 0;
+}
+.logo{
+   width: 150px;
+}

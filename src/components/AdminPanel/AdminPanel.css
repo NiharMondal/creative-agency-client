@@ -1,0 +1,22 @@
+.sidebar{
+   padding-top: 7px;
+}
+ul li{
+   padding: 1px 13px;
+   list-style: none;
+}
+.sidebar_link{
+   font-weight: 600;
+   padding: 5px 20px;
+   color: #000;
+}
+.sidebar_link:hover{
+   text-decoration: none;
+}
+.side_link{
+   color: #007bff;
+}
+.topic_id{
+   padding: 7px;
+
+}

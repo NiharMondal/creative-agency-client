@@ -1,0 +1,20 @@
+.frame{
+   padding: 5px 20px 5px 30px;
+   width: 500px;
+  
+}
+.img_section{
+   overflow-y: hidden;
+}
+@media(max-width: 360px){
+   .img_section img{
+      width: 300px;
+   }
+}
+@media(max-width: 411px){
+   .img_section img{
+      width: 250px;
+   }
+}
+
+

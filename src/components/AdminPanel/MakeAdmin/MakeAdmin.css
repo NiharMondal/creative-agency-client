@@ -1,0 +1,17 @@
+.form_wrapper{
+   background-color: #e5e5e5;
+   padding: 20px 5px;
+   height: 75vh;
+   width: auto;
+
+}
+.add_admin{
+   background-color: #fff;
+   padding: 10px 20px;
+   height: 220px;
+   border-radius: 10px;
+   margin: 0 20px ;
+}
+.add_admin button{
+   margin-top: 32px;
+}

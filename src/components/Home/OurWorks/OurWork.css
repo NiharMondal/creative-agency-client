@@ -1,0 +1,12 @@
+.crousel_section{
+   padding: 50px 0;
+   background-color: black;
+
+}
+.crousel_section h4{
+   text-align: center;
+   color: #fff;
+}
+.crousel_section img{
+   height: 350px;
+}

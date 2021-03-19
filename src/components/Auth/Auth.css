@@ -1,0 +1,17 @@
+.auth_wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+.auth_content .g_btn img{
+   margin-right: 15px;
+   width: 30px;
+}
+.g_btn{
+   font-weight: 550 !important;
+   letter-spacing: 2px !important;
+   font-family: serif !important;
+}

@@ -1,12 +1,16 @@
 import { createContext, useState } from 'react';
 import {
   BrowserRouter as Router,
-
-  Route, Switch
+  Route,
+  Switch
 } from "react-router-dom";
 import './App.css';
 import Auth from './components/Auth/Auth';
+import Dashboard from './components/Dashboard/Dashboard';
+import Header from './components/Home/Header/Header';
 import Home from './components/Home/Home';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
 
 export const UserContext = createContext();
 function App() {
@@ -14,17 +18,21 @@ function App() {
   return (
     <UserContext.Provider value={[user,setUser]}>
       <Router>
+        <Header/>
         <Switch>
-          <Route exact path="/">
-              <Home/>
-          </Route>
+          <PrivateRoute path="/dashboard">
+            <Dashboard/>
+          </PrivateRoute>
           <Route path="/auth">
             <Auth/>
+          </Route>
+          <Route exact path="/">
+            <Home/>
           </Route>
         </Switch>
       </Router>
     </UserContext.Provider>
   );
-}
+};
 
 export default App;
