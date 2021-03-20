@@ -38,7 +38,7 @@ const MakeAdmin = () => {
                      <label htmlFor="email">Email</label>
                      <input type="email"
                         onBlur={handleBlur}
-                        class="form-control"
+                        className="form-control"
                         placeholder="Enter Email"
                         name="email"
                      />

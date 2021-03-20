@@ -1,0 +1,10 @@
+.not_found{
+   height: 90vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.child{
+   padding: 30px 50px;
+}

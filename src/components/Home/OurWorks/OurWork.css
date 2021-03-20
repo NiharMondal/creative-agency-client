@@ -1,12 +1,16 @@
-.crousel_section{
-   padding: 50px 0;
-   background-color: black;
-
+.image{
+   height: 300px;
+   width: 400px;
 }
-.crousel_section h4{
-   text-align: center;
-   color: #fff;
+@media only screen and (min-width:442px) and (max-width:582px){
+   .image{
+       width:98%;
+       height:180px;
+   }
 }
-.crousel_section img{
-   height: 350px;
+@media only screen and (min-width:583px) and (max-width:1000px){
+   .image{
+       width:90%;
+       height:180px;
+   }
 }

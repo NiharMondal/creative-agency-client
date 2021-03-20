@@ -4,7 +4,6 @@ import FeedbackItem from './FeedbackItem';
 import { Spinner } from 'react-bootstrap';
 const ClientsFeedback = () => {
    const [feedback, setFeedback] = useState([])
-   console.log(feedback);
    useEffect(() => {
       fetch("http://localhost:4000/get-review")
          .then(res => res.json())
@@ -20,7 +19,7 @@ const ClientsFeedback = () => {
             justify="space-around">
             {
                feedback.length ?
-                  feedback.map(data => <FeedbackItem sfeedback={data} />) : <Spinner animation="grow" variant="dark" />
+                  feedback.map(data => <FeedbackItem key={ data._id} sfeedback={data} />) : <Spinner animation="grow" variant="warning" />
             }
          </Grid>
          

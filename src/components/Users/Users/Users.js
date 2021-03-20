@@ -4,6 +4,8 @@ import { Route, Switch, useRouteMatch } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Order from '../Order/Order';
 import Usertopic from './Usertopic';
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {RiHandbagFill, RiMessage2Fill} from 'react-icons/ri'
 import './Users.css'
 const Users = () => {
    let {path,url}= useRouteMatch()
@@ -13,14 +15,22 @@ const Users = () => {
             <ul>
                <li>
                   <NavLink exact
-                     activeClassName="side_link" to={`${url}/order`} className="sidebar_link">Order</NavLink>
+                     activeClassName="side_link" to={`${url}/order`} className="sidebar_link">
+                        <AiOutlineShoppingCart/> Order
+                     </NavLink>
                </li>
                <li>
-                  <NavLink activeClassName="side_link" to={`${url}/order-list`} className="sidebar_link">Order List</NavLink>
+                  <NavLink
+                     activeClassName="side_link" to={`${url}/order-list`} className="sidebar_link">
+                     <RiHandbagFill/> Order List
+                  </NavLink>
                </li>
                <li>
                   
-                  <NavLink activeClassName="side_link" to={`${url}/review`} className="sidebar_link">Review</NavLink>
+                  <NavLink
+                     activeClassName="side_link" to={`${url}/review`} className="sidebar_link">
+                     <RiMessage2Fill/> Review
+                  </NavLink>
                </li>
             </ul>
          </Grid>

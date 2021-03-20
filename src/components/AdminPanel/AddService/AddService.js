@@ -35,38 +35,40 @@ const AddService = () => {
          <h3>Add Service</h3>
          <div className="form_wrapper">
             <form className="form" onSubmit={handleFormSubmit}>
-            {alert && <Alert variant="success"
+               {alert && <Alert
+                  onClose={() => setAlert(false)} dismissible
+                  variant="success"
                      className="text-center">
                      Service added successfully
                   </Alert>}
                <div className="form-row">
                   
-               <div class="form-group col-md-6">
+               <div className="form-group col-md-6">
                      <label for="inputEmail4">Service title
                      </label>
                      <input
                         onBlur={handleBlur}
-                        type="text" class="form-control" placeholder="Enter title"
+                        type="text" className="form-control" placeholder="Enter title"
                         name="title"
                      />
                   </div>
-               <div class="form-group col-md-3">
+               <div className="form-group col-md-3">
                      <label for="inputEmail4">Icon
                      </label>
                      <input
                         onChange={handleFileChange}
-                        type="file" class="form-control"
+                        type="file" className="form-control"
                         name="file"
                      />
                   </div>
 
                </div>
-               <div class="form-group col-md-6 p-0">
+               <div className="form-group col-md-6 p-0">
                   <label for="exampleFormControlTextarea1">Example textarea</label>
                   
                   <textarea
                      onBlur={handleBlur}
-                     class="form-control" name="description" rows="3">
+                     className="form-control" name="description" rows="3">
                      
                   </textarea>
                   

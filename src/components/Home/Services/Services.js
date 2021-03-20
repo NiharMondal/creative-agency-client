@@ -16,12 +16,13 @@ const Services = () => {
          text-center">
             <h5>Service We Provide</h5>
          <Grid container
+            spacing={2}
             className="pt-4"
             justify="space-around">
             {
                services.length ?
                   
-               services.map(service => <ServiceItem key={service.title} service={ service}/>): <Spinner animation="grow" variant="dark" />
+               services.map(service => <ServiceItem key={service.title} service={ service}/>): <Spinner animation="grow" variant="warning" />
             }
             
          </Grid>

@@ -1,6 +1,7 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
 import { Button } from 'react-bootstrap';
+
 import './Footer.css';
 const Footer = () => {
    return (
@@ -48,7 +49,7 @@ const Footer = () => {
                         className="form-control"
                         id="exampleFormControlTextarea1" name="" rows="4"></textarea>
                   </div>
-                  <Button className="px-4" type="submit" variant="dark">
+                  <Button className="px-4"  variant="dark">
                      SEND
                   </Button>
                </form>

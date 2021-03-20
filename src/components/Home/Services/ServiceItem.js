@@ -8,7 +8,8 @@ const ServiceItem = ({ service }) => {
       history.push('/dashboard')
    }  
    return (
-      <Grid item md={3} sm={11} xs={11}>
+      <>
+         <Grid item md={4} sm={11} xs={11}>
          <section
             onClick={handleUser}
             className="service_part ">
@@ -18,6 +19,7 @@ const ServiceItem = ({ service }) => {
          </section>
          
       </Grid>
+      </>
    );
 };
 

@@ -1,6 +1,6 @@
 .service_part{
    cursor: pointer;
-   padding:  10px 20px;
+   padding:  10px 10px;
    height: 300px;
    transition: .7s;
    margin-bottom: 14px;
@@ -9,7 +9,7 @@
    width: 100px;
 }
 .service_part:hover{
-   transform: scale(1.1);
+   transform: scale(1.07);
    transition: .5s;
    box-shadow: 10px 10px 30px #c4c4c4;
 }

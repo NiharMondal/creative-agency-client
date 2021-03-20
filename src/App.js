@@ -9,6 +9,7 @@ import Auth from './components/Auth/Auth';
 import Dashboard from './components/Dashboard/Dashboard';
 import Header from './components/Home/Header/Header';
 import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
@@ -23,11 +24,15 @@ function App() {
           <PrivateRoute path="/dashboard">
             <Dashboard/>
           </PrivateRoute>
+          
           <Route path="/auth">
             <Auth/>
           </Route>
           <Route exact path="/">
             <Home/>
+          </Route>
+          <Route path="*">
+            <NotFound/>
           </Route>
         </Switch>
       </Router>

@@ -15,14 +15,14 @@ const AdminPanel = () => {
             <ul>
                <li>
                   <NavLink exact
-                     activeClassName="side_link" to={`${url}/service-list`} className="sidebar_link"> <CgPlayListCheck className="mr-1"/> Service List</NavLink>
+                     activeClassName="side_link" to={`${url}/service-list`} className="sidebar_link"> <CgPlayListCheck/> Service List</NavLink>
                </li>
                <li>
-                  <NavLink activeClassName="side_link" to={`${url}/add-service`} className="sidebar_link"><GrAdd className="mr-1"/>Add Service</NavLink>
+                  <NavLink activeClassName="side_link" to={`${url}/add-service`} className="sidebar_link"><GrAdd/> Add Service</NavLink>
                </li>
                <li>
                   
-                  <NavLink activeClassName="side_link" to={`${url}/make-admin`} className="sidebar_link"><FiUserPlus className="mr-1"/>Make Admin</NavLink>
+                  <NavLink activeClassName="side_link" to={`${url}/make-admin`} className="sidebar_link"><FiUserPlus/> Make Admin</NavLink>
                </li>
             </ul>
          </Grid>
