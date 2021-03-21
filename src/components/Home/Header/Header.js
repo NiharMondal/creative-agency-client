@@ -35,7 +35,7 @@ const Header = () => {
                </Nav.Link>
                <Nav.Link>
                   <NavLink
-                     className="link mr-3" activeClassName="active_link" to="/contact">Contact Us
+                     className="link mr-3" activeClassName="active_link" to="/contact-us">Contact Us
                   </NavLink>
                </Nav.Link >
                <NavLink to="/auth" className="mr-5">
