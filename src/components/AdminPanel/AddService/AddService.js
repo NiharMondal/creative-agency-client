@@ -20,7 +20,7 @@ const AddService = () => {
       formData.append('file', file)
       formData.append('title', info.title)
       formData.append('description', info.description)
-      fetch("http://localhost:4000/add-service", {
+      fetch("https://whispering-springs-56641.herokuapp.com/add-service", {
          method: 'post',
          body: formData
       })

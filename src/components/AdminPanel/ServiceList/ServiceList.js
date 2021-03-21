@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Spinner, Table } from 'react-bootstrap';
+import {  Table } from 'react-bootstrap';
 import './ServiceList.css';
 import ServiceTable from './ServiceTable';
 
@@ -7,7 +7,7 @@ const ServiceList = () => {
    const [services, setServices] = useState([]);
    
    useEffect(() => {
-      fetch("http://localhost:4000/get-order")
+      fetch("https://whispering-springs-56641.herokuapp.com/get-order")
          .then(res => res.json())
          .then(data => {
             setServices(data)

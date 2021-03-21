@@ -8,13 +8,13 @@ const OrderList = () => {
    const [myOrder, setMyOrder] = useState([])
    console.log(myOrder);
    useEffect(() => {
-      fetch("http://localhost:4000/my-order", {
+      fetch("https://whispering-springs-56641.herokuapp.com/my-order", {
          method: 'get',
          headers: { 'content-type': 'application/json',email: user.email },
       })
          .then(res => res.json())
          .then(data=>setMyOrder(data))
-   },[])
+   },[user.email])
    return (
       <>
          <h4>Order list</h4>

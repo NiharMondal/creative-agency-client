@@ -18,7 +18,7 @@ const Order = () => {
       const details = order.details;
       const title = order.title;
       const price = order.price;
-      fetch("http://localhost:4000/add-order", {
+      fetch("https://whispering-springs-56641.herokuapp.com/add-order", {
          method: 'post',
          headers: { 'content-type': 'application/json' },
          body: JSON.stringify({ name:name,email:email,details:details,title:title,price:price})

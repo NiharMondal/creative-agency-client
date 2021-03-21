@@ -6,7 +6,7 @@ import { Spinner } from 'react-bootstrap';
 const Services = () => {
    const [services, setServices] = useState([]);
    useEffect(() => {
-      fetch("http://localhost:4000/all-services")
+      fetch("https://whispering-springs-56641.herokuapp.com/all-services")
          .then(res => res.json())
       .then(data=>setServices(data))
    },[])

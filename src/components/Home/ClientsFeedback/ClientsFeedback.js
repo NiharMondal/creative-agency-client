@@ -5,7 +5,7 @@ import { Spinner } from 'react-bootstrap';
 const ClientsFeedback = () => {
    const [feedback, setFeedback] = useState([])
    useEffect(() => {
-      fetch("http://localhost:4000/get-review")
+      fetch("https://whispering-springs-56641.herokuapp.com/get-review")
          .then(res => res.json())
          .then(data => {
             setFeedback(data)

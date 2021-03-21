@@ -1,11 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Form} from 'react-bootstrap'
 const ServiceTable = ({ service }) => {
-   const [value, setValue] = useState('')
-
-   const handleChange = (e) => {
-      setValue(e.target.value)
-   }
    
    return (
       <>
@@ -15,7 +10,7 @@ const ServiceTable = ({ service }) => {
             <td>{ service.title}</td>
             <td>{ service.details}</td>
             <td>
-               <Form.Control as="select" onChange={handleChange}>
+               <Form.Control as="select">
                   <option name="pending" value="pending"> Pending</option>
                   <option name="ongoing" value="ongoing"> Ongoing</option>
                   <option name="done"  value="done"> Done</option>

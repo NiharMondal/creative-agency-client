@@ -14,7 +14,7 @@ const MakeAdmin = () => {
    const handleAdmin = (e) => {
       e.preventDefault();
 
-      fetch("http://localhost:4000/make-admin", {
+      fetch("https://whispering-springs-56641.herokuapp.com/make-admin", {
          method: 'post',
          headers: {
             "content-type": "application/json"

@@ -14,7 +14,7 @@ const Review = () => {
       const position = review.position;
       const description = review.description;
       e.preventDefault()
-      fetch("http://localhost:4000/add-review", {
+      fetch("https://whispering-springs-56641.herokuapp.com/add-review", {
          method: 'post',
          headers: { 'content-type': 'application/json' },
          body: JSON.stringify({name: name,position: position, description:description})
