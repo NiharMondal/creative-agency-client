@@ -16,8 +16,7 @@ const NotFound = () => {
                className="mb-3"
                onClick={goback}
             > <ImArrowLeft2 /> Go Back</Button>
-            <h5>Oops! Sorry</h5>
-            <p>Page not found</p>
+            <h1>Comming soon <span className="text-info">....</span></h1>
          </div>
       </section>
    );
