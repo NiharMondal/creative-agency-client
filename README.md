@@ -8,7 +8,7 @@
 ## Back-end, packages and server
 ### Node.js, Express.js, Mondodb Atlas,
 
-A full-stack web application where a user can buy a course for his/her needs.
+A full-stack web application where users can buy a course for their needs.
 
 ❖ Technology: React, React-Bootstrap, Material UI, Node Js, Express Js, 
 Mongodb Atlas, Firebase.
