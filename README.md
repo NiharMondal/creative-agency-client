@@ -12,6 +12,8 @@ A full-stack web application where a user can buy a course for his/her needs.
 
 ❖ Technology: React, React-Bootstrap, Material UI, Node Js, Express Js, 
 Mongodb Atlas, Firebase.
+
 ❖It has multi user dashboard.
+
 ❖ Admin can add more services, admin too
 
